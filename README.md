@@ -1,8 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Отчет со списком юзеров
 
-Currently, two official plugins are available:
+На странице есть поиск по юзерам.
+При вводе в строке поиска список фильтруется. 
+При клике по карточке выводится в pop-up дополнительная информация по юзеру
+При нажатии вне окна с информацией или крестик окно закрывается.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Добавлен локальный сервер. 
+
+Используется React, Fastify, Vite
+
+### Запуск
+Команда **npm run dev** запустит клиент на http://localhost:5173/ и сервер http://localhost:3000/
