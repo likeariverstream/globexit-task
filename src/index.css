@@ -1,22 +1,38 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #ffffff;
-  margin: 0 auto;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+html, body {
+  max-height: 100vh;
+  height: 100vh;
+  min-width: 320px;
 }
 
-body {
+:root {
+  font-family: Proxima Nova, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100%;
+  color: #262c40;
+  background-color: #ffffff;
   margin: 0 auto;
-  flex-direction: column;
-  align-items: center;
   display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #262c40;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #262c40;
+  border-radius: 100vh;
+  border: 2px solid #8189a3;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8189a3;
 }

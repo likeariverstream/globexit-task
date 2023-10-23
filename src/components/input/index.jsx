@@ -2,13 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.css'
 import searchIcon from '../../assets/search-icon.svg'
+import { debounce } from '../../utils/debounce.js'
 
 export const Input = ({ value, onChange }) => {
   const [inputValue, setInputValue] = React.useState(value || '')
   const handleChange = (e) => {
     const { value } = e.target
     setInputValue(value)
-    onChange(value)
+    debounce(onChange, 800)(value.trim())
   }
   return (
     <div className={styles.container}>

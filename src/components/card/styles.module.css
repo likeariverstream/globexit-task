@@ -1,4 +1,5 @@
 .card {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 357px;
@@ -16,6 +17,8 @@
 }
 
 .title {
+  display: block;
+  margin: 0;
   font-family:
     Proxima Nova,
     serif;
@@ -23,7 +26,8 @@
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0;
-  text-align: center;
+  text-align: left;
+  color: #262c40;
 }
 
 .container {
@@ -46,6 +50,8 @@
 }
 
 .text {
+  display: block;
+  margin: 0;
   font-family:
     Proxima Nova,
     serif;

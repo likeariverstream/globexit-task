@@ -4,14 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev:client": "vite",
     "dev:server": "node src/server/server.js",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@fastify/cors": "^7.0.0",
+    "concurrently": "^8.2.2",
     "fastify": "^3.25.3",
     "fastify-cors": "^6.0.2",
     "prop-types": "^15.8.1",

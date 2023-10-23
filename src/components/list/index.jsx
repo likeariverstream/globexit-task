@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './styles.module.css'
 import phoneIcon from '../../assets/phone-icon.svg'
 import emailIcon from '../../assets/email-icon.svg'
@@ -7,7 +6,7 @@ import { Card } from "../card/index.jsx";
 
 export const List = ({ data, handleClick }) => {
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       {data.map((card) => {
         const { email, name, phone } = card
         const id = `${email}${name}${phone}`
@@ -21,7 +20,7 @@ export const List = ({ data, handleClick }) => {
           />
         )
       })}
-    </main>
+    </div>
   )
 }
 
